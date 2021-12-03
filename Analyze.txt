@@ -1,0 +1,28 @@
+During Execution
+Case 1:
+    We are running Map of 30X40
+    with 5 roborts, 25 dirt
+    execution step is 923, 
+    100% cleaned, 
+    number of movement is 4615
+
+Case 2:
+    We are running Map of 30X40
+    with 25 roborts, 25 dirt
+    execution step is 320, 
+    100% cleaned, 
+    number of movement is 8000
+
+Analyze:
+When there is MORE agents, LESS time will spend
+When there is MORE agents, MORE movement will take
+
+Because more agent will increase the chance to get the dirt, means the dirt will be found faster
+in the same time, more agent means more random total move will be there, so the more total movement will take
+
+Improvement:
+Since the movement is random, it means the movement is not efficent.
+We need to make the routin more clean to let robot know.
+We can guid the direction of the robot by nearest dirt's location, instead of randomly
+Also, before robot take the direction, we shall check the available diretion robot can go,
+and avoid the stuck situation.
